@@ -1,0 +1,51 @@
+@import "styles/colors";
+
+/* Expenses body */
+.expenses-body {
+  color: $dark-brown;
+  padding: 3rem 2rem 6rem;
+  border-radius: 12px;
+  background-color: $pale-orange;
+}
+
+/* Chart */
+
+.chart {
+  margin-top: 6rem;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 200px;
+  li {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 200px;
+    span {
+      display: block;
+      width: 75%;
+      margin: 0 auto;
+      border-radius: 4px;
+      &:before {
+        font-size: 0.9em;
+        position: absolute;
+        top: 105%;
+        left: -7px;
+        display: block;
+        text-align: center;
+        content: attr(title);
+        rotate: 40dgr;
+        transform: rotate(-50deg);
+        width: 45px;
+      }
+    }
+  }
+
+  .bg-soft-red{
+    background-color: $soft-red;
+  }
+
+  .bg-cyan{
+    background-color: $cyan;
+  }
+}

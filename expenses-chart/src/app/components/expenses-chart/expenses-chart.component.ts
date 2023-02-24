@@ -8,12 +8,11 @@ import Utils from '@src/utils/Utils';
   styleUrls: ['./expenses-chart.component.scss'],
 })
 export class ExpensesChartComponent implements OnInit {
-  total = Utils.currency(this.totalCalc(data));
-
+  total = this.totalCalc(data);
+  data = data;
   constructor() {}
 
   ngOnInit() {
-    console.log(this.total);
   }
 
   totalCalc(data: any[]): number {

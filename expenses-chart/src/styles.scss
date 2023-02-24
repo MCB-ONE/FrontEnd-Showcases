@@ -9,4 +9,12 @@ body{
   height: 100%;
 }
 
-html, body { height: 100%; }
+html, body {
+  background-color: $cream;
+  height: 100%;
+}
+
+.subtitle {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}

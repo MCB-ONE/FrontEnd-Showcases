@@ -1,1 +1,11 @@
-<p>expenses-chart-body works!</p>
+<div class='expenses-body'>
+  <h4>Gastos - Últimos 7 días</h4>
+   <ul class='chart'>
+    <li *ngFor="let item of data">
+      <span *ngIf="getMaxBg(item.amount)" [style.height]="getHeight(item.amount)" title={{item.day}} class="bg-cyan">
+      </span>
+      <span *ngIf="!getMaxBg(item.amount)" [style.height]="getHeight(item.amount)" title={{item.day}} class="bg-soft-red">
+      </span>
+    </li>
+  </ul>
+</div>

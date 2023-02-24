@@ -2,5 +2,8 @@
   <!-- <ExpensesHeader total={totalCalc(data)}/>
   <ExpensesBody data={data} total={totalCalc(data)}/> -->
   <app-expenses-chart-header [total]="total"/>
-  <app-expenses-chart-body />
+  <app-expenses-chart-body
+  [total]="total"
+  [data]="data"
+  />
 </div>
