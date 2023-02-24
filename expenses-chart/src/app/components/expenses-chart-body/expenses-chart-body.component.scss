@@ -3,7 +3,7 @@
 /* Expenses body */
 .expenses-body {
   color: $dark-brown;
-  padding: 3rem 2rem 6rem;
+  padding: 3rem 2rem;
   border-radius: 12px;
   background-color: $pale-orange;
 }
@@ -12,6 +12,7 @@
 
 .chart {
   margin-top: 6rem;
+  margin-bottom: 6rem;
   display: table;
   table-layout: fixed;
   width: 100%;
@@ -49,3 +50,30 @@
     background-color: $cyan;
   }
 }
+
+.expenses-resume{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 2px;
+  border-top-style: groove;
+  h5{
+    color: $medium-brown;
+  }
+  &__percent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    span{
+      text-align: right;
+      font-weight: bold;
+      display: block;
+      font-size: 1.3em;
+    }
+    p{
+      color: $medium-brown;
+      margin: 0;
+    }
+  }
+}
+
