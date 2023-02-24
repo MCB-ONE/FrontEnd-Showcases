@@ -1,0 +1,14 @@
+@import "../../../styles/colors.scss";
+
+
+/* Expenses header */
+
+.expenses-header {
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $soft-red;
+}
