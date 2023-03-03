@@ -110,11 +110,6 @@ h4, .h4 {
     @include input-placeholder($light-san-juan-blue);
 }
 
-
-
-
-
-
 /*BACKGROUNDS*/
 .bg-dark {
     background: $mirage-blue !important;
@@ -166,6 +161,7 @@ h4, .h4 {
 /*Forms*/
 .start-form {
     width: 100%;
+    padding: 0px 44px;
     margin-bottom: 60px;
 }
 
