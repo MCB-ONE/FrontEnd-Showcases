@@ -1,0 +1,71 @@
+#pricing {
+
+    .page-wrapper {
+        overflow: hidden;
+        background: url(../img/bg-pattern-circle.svg) no-repeat;
+        background-position-y: -651px;
+        background-position-x: 54px;
+    }
+
+    main {
+        padding: 0px 34px;
+    }
+    
+   .start-form{
+		padding: 0px;
+	}
+
+}
+
+
+.price-card {
+	margin-bottom:  55px;
+    text-align: center;
+    padding: 0;
+
+    p:first-of-type {
+        margin-bottom: 44px;
+    }
+
+
+    h4 {
+        color: $dark-pink;
+
+    }
+
+    .h1-small {
+        margin-bottom: 16px;
+        
+    }
+
+    .pricing-features{
+    	padding: 20px 0;
+    	border-top: 1px solid $san-juan-blue;
+        border-bottom: 1px solid $san-juan-blue;
+    }
+
+    ul {
+        padding: 0;
+        width: fit-content;
+        margin: 0 auto;
+       
+    }
+
+    li {
+        list-style: none;
+        color: $light-san-juan-blue;
+        width: fit-content;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .check-item {
+        list-style-image: url(../img/icon-check.svg);
+        color: $san-juan-blue;
+        font-weight: 600;
+        width: fit-content;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+}

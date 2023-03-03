@@ -1,0 +1,87 @@
+/*Home*/
+
+#home{
+
+	.page-wrapper {
+	overflow: hidden;
+    background: url(../img/bg-pattern-circle.svg) no-repeat center;
+    background-position-y: -535px;
+	}
+
+	h1{
+		padding: 0px;
+	}
+
+}
+
+.hero{
+	 padding: 20px 34px 0px;
+
+	 .h3-big{
+    	    margin-top: -15px;
+    	    margin-bottom: 20px;
+	 }
+	 	.image-hero{
+			width: 60%;
+			margin: 0 auto 0 80px;
+		}
+
+		.hero .h3-big {
+    		margin-top: -60px;
+		}
+
+		a{
+			color: $san-juan-blue !important;
+			padding-bottom: 1px;
+			border-bottom: 1px solid;
+		}
+}
+
+
+.features{
+	padding: 40px 44px 80px;
+
+	p{
+		margin-bottom:50px;
+	}
+
+	.img-1 {
+	    width: 146%;
+	    margin-left: -49px;
+	}
+
+
+	.img-2 {
+	    width: 125%;
+	    margin-left: -27px;
+	    margin-bottom: 15px;
+	}
+
+	h3{
+		margin-top: -25px;
+	}
+
+	.featuring-card{
+
+		text-align: center;;
+
+		img{
+			margin-top: 54px;
+		}
+
+		p{
+			padding: 0;
+			margin: 0;
+		}
+
+		.featuring-card-tittle{
+			padding: 34px 0px 20px;
+		}
+	}
+
+
+
+}
+
+
+

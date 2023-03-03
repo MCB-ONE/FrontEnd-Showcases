@@ -1,0 +1,27 @@
+#contact{
+	.page-wrapper {
+        overflow: hidden;
+        background: url(../img/bg-pattern-circle.svg) no-repeat;
+        background-position-y: -651px;
+        background-position-x: 54px;
+    }
+
+	main{
+		padding: 0px 34px;
+	}
+
+	.partners{
+		width: 100%;
+		background: none;
+		.h4{
+			margin-bottom: 24px;
+			color: $light-san-juan-blue;
+		}
+		.partners-grid {
+		    padding: 0 24px;
+		    grid-row-gap: 30px;
+		}
+	}
+
+	
+}

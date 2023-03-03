@@ -1,0 +1,210 @@
+/*Imports*/
+@import "variables";
+@import "header";
+@import "footer";
+@import "home";
+@import "pricing";
+@import "about";
+@import "contact";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: $san-juan-blue;
+}
+
+
+.page-wrapper {
+    overflow: hidden;
+    background: url(../img/bg-pattern-circle.svg) no-repeat center;
+    background-position-y: -535px;
+}
+
+
+/*HEADERS*/
+h1 {
+    padding: 60px 0px 55px;
+}
+
+.h1-big {
+    font-family: 'DM Serif Display', serif;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.h1-small {
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px;
+    line-height: 56px;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+
+.h3-big {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.h3-small {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h4, .h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+
+/*Colors*/
+.txt-white {
+    color: $water-white;
+}
+
+.txt-light-grey {
+    color: $light-grey;
+}
+
+/*Buttons*/
+.button {
+    display: inline-block;
+    border: none;
+    padding: 10px 0;
+    border-radius: 30px;
+}
+
+.primary-button {
+    background: $dark-pink;
+    color: $water-white;
+}
+
+.secondary-light-button {
+    background: none;
+    color: $water-white !important;
+    border: $water-white;
+    border: 1px solid $water-white;
+}
+
+.secondary-dark-button {
+    background: none;
+    color: $san-juan-blue !important;
+    border: $san-juan-blue;
+    border: 1px solid $san-juan-blue;
+}
+
+.submit-query {
+    border: none;
+    padding: 10px 0 12px 20px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px #36536B2E;
+    @include input-placeholder($light-san-juan-blue);
+}
+
+
+
+
+
+
+/*BACKGROUNDS*/
+.bg-dark {
+    background: $mirage-blue !important;
+}
+
+.bg-light {
+    background: #EDF3F8 !important;
+}
+
+/*Grids*/
+.partners{
+    background: url(../img/bg-pattern-circle.svg) no-repeat center, $mirage-blue;
+    background-position-y: -555px;
+    padding: 80px 24px;
+
+    a.button{
+        width: 130px;
+    }
+
+    .h3-big{
+        font-size: 36px;
+    }
+
+    .partners-grid {
+    padding: 0 2rem 8rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 70px;
+    align-items: center;
+
+    }
+
+    .partners-grid-dark {
+        svg {
+            fill: $water-white !important;
+        }
+    }
+
+    .partners-grid-light {
+        svg {
+            fill: $san-juan-blue !important;
+        }
+    }
+}
+
+
+/*Forms*/
+.start-form {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.start-form p {
+    margin-bottom: 24px;
+}
+
+.contact-form {
+    input {
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid;
+        color: $light-san-juan-blue;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        @include input-placeholder($light-san-juan-blue);
+    }
+
+    textarea {
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid;
+        color: $light-san-juan-blue;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        @include input-placeholder($light-san-juan-blue);
+    }
+
+    .legal-check {
+        align-items: center;
+        input {
+            width: 24px;
+            height: 24px;
+            border: none;
+            background: none;
+        }
+    }
+}

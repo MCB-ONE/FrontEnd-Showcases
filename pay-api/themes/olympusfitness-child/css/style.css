@@ -1,0 +1,589 @@
+/*Imports*/
+/*Colors*/
+/*Mixins*/
+/*Header*/
+header {
+  padding: 40px 24px 0 24px;
+}
+
+/*FOOTER*/
+footer {
+  height: 355px;
+  color: #fbfcfe;
+}
+
+footer a {
+  color: #fbfcfe !important;
+}
+
+.footer-bg {
+  height: 100%;
+  background-image: url(../img/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 780px;
+  background-position-x: 50%;
+  background-position-y: -40%;
+}
+
+/*Home*/
+#home .page-wrapper {
+  overflow: hidden;
+  background: url(../img/bg-pattern-circle.svg) no-repeat center;
+  background-position-y: -535px;
+}
+
+#home h1 {
+  padding: 0px;
+}
+
+.hero {
+  padding: 20px 34px 0px;
+}
+
+.hero .h3-big {
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+.hero .image-hero {
+  width: 60%;
+  margin: 0 auto 0 80px;
+}
+
+.hero .hero .h3-big {
+  margin-top: -60px;
+}
+
+.hero a {
+  color: #36536b !important;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+}
+
+.features {
+  padding: 40px 44px 80px;
+}
+
+.features p {
+  margin-bottom: 50px;
+}
+
+.features .img-1 {
+  width: 146%;
+  margin-left: -49px;
+}
+
+.features .img-2 {
+  width: 125%;
+  margin-left: -27px;
+  margin-bottom: 15px;
+}
+
+.features h3 {
+  margin-top: -25px;
+}
+
+.features .featuring-card {
+  text-align: center;
+}
+
+.features .featuring-card img {
+  margin-top: 54px;
+}
+
+.features .featuring-card p {
+  padding: 0;
+  margin: 0;
+}
+
+.features .featuring-card .featuring-card-tittle {
+  padding: 34px 0px 20px;
+}
+
+#pricing .page-wrapper {
+  overflow: hidden;
+  background: url(../img/bg-pattern-circle.svg) no-repeat;
+  background-position-y: -651px;
+  background-position-x: 54px;
+}
+
+#pricing main {
+  padding: 0px 34px;
+}
+
+#pricing .start-form {
+  padding: 0px;
+}
+
+.price-card {
+  margin-bottom: 55px;
+  text-align: center;
+  padding: 0;
+}
+
+.price-card p:first-of-type {
+  margin-bottom: 44px;
+}
+
+.price-card h4 {
+  color: #ba4270;
+}
+
+.price-card .h1-small {
+  margin-bottom: 16px;
+}
+
+.price-card .pricing-features {
+  padding: 20px 0;
+  border-top: 1px solid #36536b;
+  border-bottom: 1px solid #36536b;
+}
+
+.price-card ul {
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.price-card li {
+  list-style: none;
+  color: #6c8294;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.price-card .check-item {
+  list-style-image: url(../img/icon-check.svg);
+  color: #36536b;
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+#about .page-wrapper {
+  overflow: hidden;
+  background: url(../img/bg-pattern-circle.svg) no-repeat;
+  background-position-y: -651px;
+  background-position-x: 54px;
+}
+
+#about h1 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#about section {
+  padding: 0px 34px;
+}
+
+#about .image-about {
+  width: 100%;
+}
+
+.about-card {
+  text-align: center;
+}
+
+.about-card p {
+  padding-bottom: 50px;
+}
+
+.about-features {
+  text-align: center;
+  width: 80%;
+  margin: 55px auto;
+  padding: 15px 34px 0px;
+  border-top: 1px solid #36536b;
+  border-bottom: 1px solid #36536b;
+}
+
+.about-features .h1-small {
+  color: #ba4270;
+}
+
+#contact .page-wrapper {
+  overflow: hidden;
+  background: url(../img/bg-pattern-circle.svg) no-repeat;
+  background-position-y: -651px;
+  background-position-x: 54px;
+}
+
+#contact main {
+  padding: 0px 34px;
+}
+
+#contact .partners {
+  width: 100%;
+  background: none;
+}
+
+#contact .partners .h4 {
+  margin-bottom: 24px;
+  color: #6c8294;
+}
+
+#contact .partners .partners-grid {
+  padding: 0 24px;
+  grid-row-gap: 30px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  color: #36536b;
+}
+
+.page-wrapper {
+  overflow: hidden;
+  background: url(../img/bg-pattern-circle.svg) no-repeat center;
+  background-position-y: -535px;
+}
+
+/*HEADERS*/
+h1 {
+  padding: 60px 0px 55px;
+}
+
+.h1-big {
+  font-family: 'DM Serif Display', serif;
+  font-size: 72px;
+  line-height: 72px;
+}
+
+.h1-small {
+  font-family: 'DM Serif Display', serif;
+  font-size: 56px;
+  line-height: 56px;
+}
+
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.h3-big {
+  font-family: 'DM Serif Display', serif;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.h3-small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h4, .h4 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/*Colors*/
+.txt-white {
+  color: #fbfcfe;
+}
+
+.txt-light-grey {
+  color: #FBFCFE;
+}
+
+/*Buttons*/
+.button {
+  display: inline-block;
+  border: none;
+  padding: 10px 0;
+  border-radius: 30px;
+}
+
+.primary-button {
+  background: #ba4270;
+  color: #fbfcfe;
+}
+
+.secondary-light-button {
+  background: none;
+  color: #fbfcfe !important;
+  border: #fbfcfe;
+  border: 1px solid #fbfcfe;
+}
+
+.secondary-dark-button {
+  background: none;
+  color: #36536b !important;
+  border: #36536b;
+  border: 1px solid #36536b;
+}
+
+.submit-query {
+  border: none;
+  padding: 10px 0 12px 20px;
+  border-radius: 24px;
+  -webkit-box-shadow: 10px 10px 25px #36536B2E;
+          box-shadow: 10px 10px 25px #36536B2E;
+  /* if not supported, Javascript should add class */
+  /* Mozilla Firefox 4 to 18 */
+  /* Mozilla Firefox 19+ */
+  /* WebKit browsers */
+  /* Internet Explorer 10+ */
+  /* browsers with full support for placeholder styling */
+}
+
+.submit-query.placeholder {
+  color: #6c8294;
+}
+
+.submit-query:-moz-placeholder {
+  color: #6c8294;
+}
+
+.submit-query::-moz-placeholder {
+  color: #6c8294;
+}
+
+.submit-query::-webkit-input-placeholder {
+  color: #6c8294;
+}
+
+.submit-query:-ms-input-placeholder {
+  color: #6c8294;
+}
+
+.submit-query::input-placeholder {
+  color: #6c8294;
+}
+
+.submit-query:input-placeholder {
+  color: #6c8294;
+}
+
+.submit-query::-webkit-input-placeholder {
+  color: #6c8294;
+}
+
+.submit-query:-ms-input-placeholder {
+  color: #6c8294;
+}
+
+.submit-query::-ms-input-placeholder {
+  color: #6c8294;
+}
+
+.submit-query::placeholder {
+  color: #6c8294;
+}
+
+.submit-query:placeholder {
+  color: #6c8294;
+}
+
+/*BACKGROUNDS*/
+.bg-dark {
+  background: #1b262f !important;
+}
+
+.bg-light {
+  background: #EDF3F8 !important;
+}
+
+/*Grids*/
+.partners {
+  background: url(../img/bg-pattern-circle.svg) no-repeat center, #1b262f;
+  background-position-y: -555px;
+  padding: 80px 24px;
+}
+
+.partners a.button {
+  width: 130px;
+}
+
+.partners .h3-big {
+  font-size: 36px;
+}
+
+.partners .partners-grid {
+  padding: 0 2rem 8rem 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners .partners-grid-dark svg {
+  fill: #fbfcfe !important;
+}
+
+.partners .partners-grid-light svg {
+  fill: #36536b !important;
+}
+
+/*Forms*/
+.start-form {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.start-form p {
+  margin-bottom: 24px;
+}
+
+.contact-form input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  color: #6c8294;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  /* if not supported, Javascript should add class */
+  /* Mozilla Firefox 4 to 18 */
+  /* Mozilla Firefox 19+ */
+  /* WebKit browsers */
+  /* Internet Explorer 10+ */
+  /* browsers with full support for placeholder styling */
+}
+
+.contact-form input.placeholder {
+  color: #6c8294;
+}
+
+.contact-form input:-moz-placeholder {
+  color: #6c8294;
+}
+
+.contact-form input::-moz-placeholder {
+  color: #6c8294;
+}
+
+.contact-form input::-webkit-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form input:-ms-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form input::input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form input:input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form input::-webkit-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form input:-ms-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form input::-ms-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form input::placeholder {
+  color: #6c8294;
+}
+
+.contact-form input:placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  color: #6c8294;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  /* if not supported, Javascript should add class */
+  /* Mozilla Firefox 4 to 18 */
+  /* Mozilla Firefox 19+ */
+  /* WebKit browsers */
+  /* Internet Explorer 10+ */
+  /* browsers with full support for placeholder styling */
+}
+
+.contact-form textarea.placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea:-moz-placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea::-moz-placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea::-webkit-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea:-ms-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea::input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea:input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea::-webkit-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea:-ms-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea::-ms-input-placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea::placeholder {
+  color: #6c8294;
+}
+
+.contact-form textarea:placeholder {
+  color: #6c8294;
+}
+
+.contact-form .legal-check {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form .legal-check input {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+}
+/*# sourceMappingURL=style.css.map */

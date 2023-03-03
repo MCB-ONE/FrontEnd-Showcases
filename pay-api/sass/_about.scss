@@ -1,0 +1,44 @@
+#about {
+
+	 .page-wrapper {
+        overflow: hidden;
+        background: url(../img/bg-pattern-circle.svg) no-repeat;
+        background-position-y: -651px;
+        background-position-x: 54px;
+    }
+
+    h1 {
+    	padding-left: 0px;
+    	padding-right: 0px;
+    }
+
+    section {
+    	padding: 0px 34px;
+   	}
+   	.image-about{
+   		width: 100%;
+   	}
+
+}
+
+.about-card{
+	text-align: center;
+	p{
+		padding-bottom: 50px;
+	}
+}
+
+
+
+.about-features {
+    text-align: center;
+    width: 80%;
+    margin: 55px auto;
+    padding: 15px 34px 0px;
+    border-top: 1px solid #36536b;
+    border-bottom: 1px solid #36536b;
+    .h1-small{
+    	color:  #ba4270;
+
+    }
+}

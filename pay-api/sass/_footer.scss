@@ -1,0 +1,21 @@
+/*FOOTER*/
+footer{
+	height: 355px;
+	color: $water-white;
+
+	a{
+		color: $water-white !important;
+	}
+
+}
+
+.footer-bg{
+	height: 100%;
+	background-image: url(../img/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 780px;
+    background-position-x: 50%;
+    background-position-y: -40%;
+}
+
+
