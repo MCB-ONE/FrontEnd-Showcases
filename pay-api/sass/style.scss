@@ -18,6 +18,9 @@ ul {
     padding: 0;
 }
 
+li {
+    list-style: none;
+}
 
 .page-wrapper {
     overflow: hidden;
@@ -26,48 +29,68 @@ ul {
 }
 
 
-/*HEADERS*/
-h1 {
-    padding: 60px 0px 55px;
+/*Headers*/
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-family: 'DM Serif Display Regular', serif;
+        font-size: 36px;
+        line-height: 36px;
+        margin: 0 0 20px;
+        padding: 0;
+    }
+
+    h2 {
+        font-family: 'DM Serif Display Regular', serif;
+        font-size: 48px;
+        line-height: 56px;
+        margin: 0 0 16px;
+        padding: 0;
+    }
+
+    h3 {
+        font-family: 'DM Serif Display Regular', serif;
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0 0 16px;
+        padding: 0;
+    }
+
+    h3.small {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 18px;
+        line-height: 25px;
+        margin: 0 0 12px;
+        padding: 0;
+    }
+
+    h4 {
+        font-family: 'DM Serif Display Regular', serif;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 12px;
+        padding: 0;
+    }
 }
 
-.h1-big {
-    font-family: 'DM Serif Display', serif;
-    font-size: 72px;
-    line-height: 72px;
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 56px;
+        line-height: 72px;
+        margin: 0 0 32px;
+    }
 }
 
-.h1-small {
-    font-family: 'DM Serif Display', serif;
-    font-size: 56px;
-    line-height: 56px;
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 1080px) {
+    h1 {
+        font-size: 72px;
+        line-height: 72px;
+        margin: 0 0 32px;
+    }
 }
-
-h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 48px;
-    line-height: 56px;
-}
-
-
-.h3-big {
-    font-family: 'DM Serif Display', serif;
-    font-size: 32px;
-    line-height: 36px;
-}
-
-.h3-small {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-h4, .h4 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 24px;
-    line-height: 32px;
-}
-
 
 
 /*Colors*/
@@ -87,19 +110,19 @@ h4, .h4 {
     border-radius: 30px;
 }
 
-.primary-button {
+.button--primary {
     background: $dark-pink;
     color: $water-white;
 }
 
-.secondary-light-button {
+.button--secondary-light {
     background: none;
     color: $water-white !important;
     border: $water-white;
     border: 1px solid $water-white;
 }
 
-.secondary-dark-button {
+.button--secondary-dark {
     background: none;
     color: $san-juan-blue !important;
     border: $san-juan-blue;
@@ -124,44 +147,42 @@ h4, .h4 {
 }
 
 /*Grids*/
-.main-wrapper{
+.main-wrapper {
     padding: 0 44px;
 }
 
-.partners{
+.partners {
     background: url(../img/bg-pattern-circle.svg) no-repeat center, $mirage-blue;
     background-position-y: -555px;
     padding: 80px 24px;
 
-    a.button{
+    a.button {
         width: 130px;
     }
 
-    .h3-big{
+    .h3-big {
         font-size: 36px;
     }
 
-    .partners-grid {
-    padding: 0 2rem 8rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 70px;
-    align-items: center;
-
-    }
-
-    .partners-grid-dark {
-        svg {
-            fill: $water-white !important;
+    .partners__grid {
+        padding: 0 2rem 6rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 70px;
+        align-items: center;
+        &-dark {
+            svg {
+                fill: $water-white !important;
+            }
         }
-    }
-
-    .partners-grid-light {
-        svg {
-            fill: $san-juan-blue !important;
+        &-light{
+            svg {
+                fill: $san-juan-blue !important;
+            }
         }
+
     }
 }
 
@@ -170,14 +191,13 @@ h4, .h4 {
 .start-form {
     width: 100%;
     margin-bottom: 60px;
-}
-
-.start-form p {
-    margin-bottom: 24px;
+    padding: 0 20px;
 }
 
 .contact-form {
-    input {
+    text-align: left;
+
+    &__input {
         width: 100%;
         background: none;
         border: none;
@@ -189,7 +209,7 @@ h4, .h4 {
         @include input-placeholder($light-san-juan-blue);
     }
 
-    textarea {
+    &__textarea {
         width: 100%;
         background: none;
         border: none;
@@ -201,13 +221,22 @@ h4, .h4 {
         @include input-placeholder($light-san-juan-blue);
     }
 
-    .legal-check {
-        align-items: center;
-        input {
-            width: 24px;
-            height: 24px;
+    &__checkbox {
+        margin-bottom: 1rem;
+        display: flex;
+        gap: .3rem;
+        &-input {
+            margin-top: 0.5rem;
+            width: 20px;
+            height: 20px;
             border: none;
-            background: none;
+            margin-right: 0.5rem;
+            appearance: inherit;
+            background-color: $light-san-juan-blue;
+            vertical-align: middle;
+        }
+        &-label{
+            width: fit-content;
         }
     }
 }
@@ -216,7 +245,8 @@ h4, .h4 {
 
 .navbar-light .navbar-toggler {
     border: 0;
-    &:focus{
+
+    &:focus {
         outline: none;
     }
 }
