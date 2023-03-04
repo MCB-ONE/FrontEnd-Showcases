@@ -1,87 +1,80 @@
 /*Home*/
 
-#home{
+#home {
+    text-align: center;
+    .page-wrapper {
+        overflow: hidden;
+        background: url(../img/bg-pattern-circle.svg) no-repeat center;
+        background-position-y: -535px;
+    }
 
-	.page-wrapper {
-	overflow: hidden;
-    background: url(../img/bg-pattern-circle.svg) no-repeat center;
-    background-position-y: -535px;
-	}
-
-	h1{
-		padding: 0px;
-	}
-
+    .start-form{
+        padding: 0;
+    }
 }
 
-.hero{
-	 padding: 20px 34px 0px;
+.main-home{
+    &__contact{
+        padding: 0 20px;
+    }
+}
 
-	 .h3-big{
-    	    margin-top: -15px;
-    	    margin-bottom: 20px;
-	 }
-	 	.image-hero{
-			width: 60%;
-			margin: 0 auto 0 80px;
-		}
+.hero {
+    padding: 20px;
+    &__image {
+        width: 75%;
+        margin: 0 auto 0 10%;
+    }
 
-		.hero .h3-big {
-    		margin-top: -60px;
-		}
-
-		a{
-			color: $san-juan-blue !important;
-			padding-bottom: 1px;
-			border-bottom: 1px solid;
-		}
+    &__link {
+        color: $san-juan-blue !important;
+        padding-bottom: 1px;
+        border-bottom: 1px solid;
+    }
 }
 
 
-.features{
-	padding: 40px 44px 80px;
+.features {
+    padding: 20px 34px;
+    &__image{
+        &-1 {
+            width: 146%;
+            margin-left: -49px;
+        }
+        
+        &-2 {
+        width: 125%;
+        margin-left: -27px;
+        margin-bottom: 15px;
+    }
+    }
 
-	p{
-		margin-bottom:50px;
-	}
+    h3 {
+        margin-top: -25px;
+    }
+}
 
-	.img-1 {
-	    width: 146%;
-	    margin-left: -49px;
-	}
-
-
-	.img-2 {
-	    width: 125%;
-	    margin-left: -27px;
-	    margin-bottom: 15px;
-	}
-
-	h3{
-		margin-top: -25px;
-	}
-
-	.featuring-card{
-
-		text-align: center;;
-
-		img{
-			margin-top: 54px;
-		}
-
-		p{
-			padding: 0;
-			margin: 0;
-		}
-
-		.featuring-card-tittle{
-			padding: 34px 0px 20px;
-		}
-	}
-
-
-
+ .featuring-card {
+        text-align: center;
+        margin-bottom: 3rem;
+        &__icon{
+            margin-bottom: 2rem;
+        }
 }
 
 
+@media (min-width: 768px) {
+	#home{
+		.page-wrapper {
+			background-size: 115%;
+		}
+	}
 
+	.hero{
+        padding: 0 8rem;	
+		&__image{
+			width: 50%;
+			margin: 0 auto;
+		}
+	}
+}

@@ -4,27 +4,29 @@
         background: url(../img/bg-pattern-circle.svg) no-repeat;
         background-position-y: -651px;
         background-position-x: 54px;
-    }
+    }	
+}
 
-	main{
-		padding: 0px 44px;
+.main-contact{
+	padding: 40px 20px;
+	text-align: center;
+	.contact-form{
+		margin: 4rem 0;
 	}
 
 	.partners{
-		width: 100%;
 		background: none;
-		.h4{
-			margin-bottom: 24px;
-			color: $light-san-juan-blue;
+		padding: 0;
+		&__title{
+			margin: 1rem 0 3rem;
 		}
 		.partners-grid {
-		    padding: 0 24px;
-		    grid-row-gap: 30px;
+			padding: 0 20px;
+			grid-row-gap: 30px;
 		}
 	}
 
-	.start-form {
+	.start-form{
 		padding: 0;
 	}
-	
 }

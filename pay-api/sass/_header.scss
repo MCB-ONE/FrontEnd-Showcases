@@ -5,90 +5,90 @@
   z-index: 1;
 }
 
-.my-navbar input[type="checkbox"],
-.my-navbar .hamburger-lines {
-  display: block;
-}
+.app-navbar{
+  &__toggle, &__hamburger{
+    display: block;
+  }
 
-.my-navbar-container {
-  padding: 0 44px;
-  display: flex;
-  height: 64px;
-  align-items: center;
-  justify-content: space-between;
-}
+  &__hamburger{
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 50px;
+    right: 44px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+  }
 
-.my-navbar-container input[type="checkbox"] {
-  position: absolute;
-  display: block;
-  height: 28px;
-  width: 35px;
-  right: 44px;
-  top: 50px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
-}
+  &__container{
+    padding: 0 44px;
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.my-navbar-container .hamburger-lines {
-  height: 28px;
-  width: 35px;
-  position: absolute;
-  top: 50px;
-  right: 44px;
-  z-index: 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
+  &__toggle{
+    position: absolute;
+    display: block;
+    height: 28px;
+    width: 35px;
+    right: 44px;
+    top: 50px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
 
-.my-navbar-container .hamburger-lines .line {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: $mirage-blue;
-}
+  &__line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: $san-juan-blue;
+    &--1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    &--2 {
+      transition: transform 0.1s ease-in-out;
+    }
+    
+    &--3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.3s ease-in-out;
+    }
+  }
 
-.my-navbar-container .hamburger-lines .line1 {
-  transform-origin: 0% 0%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.my-navbar-container .hamburger-lines .line2 {
-  transition: transform 0.1s ease-in-out;
-}
-
-.my-navbar-container .hamburger-lines .line3 {
-  transform-origin: 0% 100%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.menu-items {
-  padding-top: 100px;
-  background: #24252a;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  width: 82%;
-  transform: translate(300%);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  transition: transform 0.5s ease-in-out;
-  overflow: scroll;
-   .divider {
+  &__menu{
+    padding-top: 100px;
+    background: #24252a;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 82%;
+    transform: translate(120%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    overflow: scroll;
+  }
+  &__divider{
     border-bottom: 1px solid #fbfcfe54;
     width: 80%;
     margin: 1rem 0 2rem;
   }
-  
-   ul {
+  &__list{
     margin-bottom: 0;
+    list-style: none;
   }
   
-   li {
+  &__item{
     list-style: none;
     font-size: 1.1rem;
     align-items: center;
@@ -96,88 +96,87 @@
     font-size: 1rem;
   }
   
-   .button {
+  .button {
+    color: $light-grey;
     width: 80%;
   }
-  a {
+  &__link{
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
   }
-  
+
 }
 
-.my-navbar-container input[type="checkbox"]:checked~.menu-items {
+.app-navbar__toggle:checked~.app-navbar__menu {
   transform: translateX(10%);
 }
 
-.my-navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+.app-navbar__toggle:checked~.app-navbar__hamburger .app-navbar__line--1 {
   transform: rotate(45deg);
+  transform-origin: 10% 0%;
   background: $water-white;
 }
 
-.my-navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+.app-navbar__toggle:checked~.app-navbar__hamburger .app-navbar__line--2 {
   transform: scaleY(0);
   background: $water-white;
 }
 
-.my-navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+.app-navbar__toggle:checked~.app-navbar__hamburger .app-navbar__line--3 {
   transform: rotate(-45deg);
   background: $water-white;
 }
 
 @media (min-width: 768px) {
+  .app-navbar{
+    &__toggle, &__hamburger{
+      display: none;
+    }
+    &__container {
+      display: flex;
+      height: 64px;
+    }
 
-  .my-navbar-container input[type="checkbox"],
-  .my-navbar-container .hamburger-lines {
-    display: none;
-  }
-
-  .my-navbar-container {
-    display: flex;
-    height: 64px;
-  }
-
-  .menu-items {
-    padding-top: 0px;
-    background: none;
-    height: auto;
-    position: initial;
-    transform: unset;
-    display: flex;
-    flex-direction: row;
-
-    .divider {
+    &__menu{
+        padding-top: 0px;
+        background: none;
+        height: auto;
+        position: initial;
+        transform: unset;
+        display: flex;
+        flex-direction: row;
+    }
+    &__divider {
       display: none;
     }
 
-    ul {
-      width: 75%;
+    &__list{
+      width: 70%;
       display: flex;
       justify-content: center;
       gap: 4rem;
       align-items: center;
     }
 
-    li{
+    &__item{
       margin-bottom: 0;
-      a{
+    }
+
+    &__link{
         color: $light-san-juan-blue;
-      }
     }
 
     .button {
-      width: 25%;
+      color: $light-san-juan-blue;
+      width: 30%;
       margin-left: auto;
       padding: 10px 10px;
+      .app-navbar__link {
+        color: $light-grey;
+    }
     }
   }
 
 }
-
-// @media (max-width: 500px) {
-//   .my-navbar-container input[type="checkbox"]:checked ~ .logo {
-//     display: none;
-//   }
-// }

@@ -5,40 +5,38 @@
         background: url(../img/bg-pattern-circle.svg) no-repeat;
         background-position-y: -651px;
         background-position-x: 54px;
-    }
-
-    h1 {
-    	padding-left: 0px;
-    	padding-right: 0px;
-    }
-
-    section {
-    	padding: 0px 44px;
-   	}
-   	.image-about{
-   		width: 100%;
-   	}
-
+    } 
 }
 
-.about-card{
-	text-align: center;
-	p{
-		padding-bottom: 50px;
-	}
+.main-about{
+    text-align: center;
+    &__title{
+        margin-bottom: 3rem;
+    }
+    &__section{
+        padding: 40px 20px;
+    }
+    &__image{
+        width: 100%;
+    }
 }
-
 
 
 .about-features {
-    text-align: center;
-    width: 80%;
-    margin: 55px auto;
-    padding: 15px 34px 0px;
+    width: 90%;
+    margin: 3rem auto;
+    padding: 2rem 20px;
     border-top: 1px solid #36536b;
     border-bottom: 1px solid #36536b;
-    .h1-small{
+    &__title{
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+    &__count{
+        font-family: 'DM Serif Display Regular', serif;
     	color:  #ba4270;
-
+        font-size: 72px;
+        font-weight: 600;
+        margin-bottom: 3rem;
     }
 }
